@@ -1,0 +1,11 @@
+.logo {
+  color: white;
+  margin-right: 2em;
+  float: left;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav {
+  text-align: right;
+}
