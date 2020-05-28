@@ -16,8 +16,8 @@ function App() {
         <Navbar />
         <Content>
           <Switch>
-          <Route component={InfoPage} path='/about'/>
-            <Route component={DataPage} path='/'/>
+            <Route component={InfoPage} path="/about" />
+            <Route component={DataPage} path="/" />
           </Switch>
         </Content>
       </Layout>
