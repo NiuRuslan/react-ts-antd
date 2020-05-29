@@ -2,3 +2,11 @@
   background: #fff;
   padding: 24px;
 }
+
+.ant-switch.rose{
+  background-color: #ff85c0
+}
+
+.ant-switch-checked.rose{
+  background-color: #1890ff
+}

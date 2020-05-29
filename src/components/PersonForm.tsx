@@ -68,6 +68,7 @@ export const PersonForm = ({onFinish}) => {
             style={{ display: "inline-block" }}
           >
             <Switch
+              className='rose'
               checkedChildren={<ManOutlined />}
               unCheckedChildren={<WomanOutlined />}
               defaultChecked

@@ -7,7 +7,7 @@ import "./InfoPage.css";
 const { Link } = Anchor;
 
 const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_1849843_fillpchkiob.js",
+  scriptUrl: "//at.alicdn.com/t/font_1849843_v5x82qchzy.js",
 });
 
 export const InfoPage = () => {
@@ -22,6 +22,7 @@ export const InfoPage = () => {
                 <Link href="https://reactjs.org/" target="_blank" title={<><IconFont type="icon-react" /> React </>} />
                 <Link href="https://www.typescriptlang.org/index.html" target="_blank" title={<><IconFont type="icon-typescript-def" /> TypeScript </>} />
                 <Link href="https://ant.design/" target="_blank" title={<><IconFont type="icon-antdesign" /> Ant Design </>} />
+                <Link href="https://github.com/NiuRuslan/react-ts-antd" target="_blank" title={<><IconFont type="icon-github" /> GitHub </>} />
             </Anchor>
             <br />
               <Button block onClick={() => history.push("/")}>

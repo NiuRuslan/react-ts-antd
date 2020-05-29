@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useHistory } from "react-router-dom";
 import { Layout, Menu } from "antd";
 import {
   SmileOutlined,
@@ -12,12 +12,11 @@ const { Header } = Layout;
 
 export const Navbar = () => {
   const location = useLocation();
-
-  console.log(location);
+  const history = useHistory();
 
   return (
     <Header>
-      <div className="logo">
+      <div className="logo" onClick={() => history.push('/')}>
         <SmileOutlined /> React + TS
       </div>
       <Menu
