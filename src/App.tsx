@@ -16,8 +16,8 @@ function App() {
         <Navbar />
         <Content>
           <Switch>
-            <Route component={InfoPage} path="/about" />
-            <Route component={DataPage} path="/" />
+            <Route component={InfoPage} path={`${process.env.PUBLIC_URL}/about`} />
+            <Route component={DataPage} path={`${process.env.PUBLIC_URL}/`} />
           </Switch>
         </Content>
       </Layout>

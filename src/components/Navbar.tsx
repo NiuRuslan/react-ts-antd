@@ -16,23 +16,23 @@ export const Navbar = () => {
 
   return (
     <Header>
-      <div className="logo" onClick={() => history.push('/')}>
+      <div className="logo" onClick={() => history.push(`${process.env.PUBLIC_URL}/`)}>
         <SmileOutlined /> React + TS
       </div>
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={["/"]}
+        defaultSelectedKeys={[`${process.env.PUBLIC_URL}/`]}
         selectedKeys={[location.pathname]}
         className="nav"
       >
-        <Menu.Item key="/">
-          <Link to="/">
+        <Menu.Item key={`${process.env.PUBLIC_URL}/`}>
+          <Link to={`${process.env.PUBLIC_URL}/`}>
             <ScheduleOutlined style={{ fontSize: "20px", margin: 0 }} />
           </Link>
         </Menu.Item>
-        <Menu.Item key="/about">
-          <NavLink to="/about">
+        <Menu.Item key={`${process.env.PUBLIC_URL}/about`}>
+          <NavLink to={`${process.env.PUBLIC_URL}/about`}>
             <InfoCircleOutlined style={{ fontSize: "20px", margin: 0 }} />
           </NavLink>
         </Menu.Item>

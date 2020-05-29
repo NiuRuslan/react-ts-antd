@@ -42,7 +42,7 @@ export const DataPage = () => {
     if (gender === undefined) gender = true;
     const newPerson = new Person(name, gender, DoB);
 
-    setData((prev) => [...prev, newPerson]);
+    setData((prev) => [newPerson, ...prev]);
   };
 
   const handleDelete = (key) => {

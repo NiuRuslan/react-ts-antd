@@ -25,7 +25,7 @@ export const InfoPage = () => {
                 <Link href="https://github.com/NiuRuslan/react-ts-antd" target="_blank" title={<><IconFont type="icon-github" /> GitHub </>} />
             </Anchor>
             <br />
-              <Button block onClick={() => history.push("/")}>
+              <Button block onClick={() => history.push(`${process.env.PUBLIC_URL}/`)}>
                 Main Page
               </Button>
           </Card>
